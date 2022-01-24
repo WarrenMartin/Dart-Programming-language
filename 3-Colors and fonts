@@ -1,0 +1,31 @@
+import 'package:flutter/material.dart';
+
+void main() =>runApp(MaterialApp(
+  home: Scaffold(  ////the property inside the scaffold weidget is AppBar,body,floating action button
+    appBar:AppBar(
+      title:Text('My first App'),
+          centerTitle: true,
+          backgroundColor:Colors.deepOrange ,    //refer to material design website
+    ) ,     //will give u app bar on top
+    body: Center(//center widget centeralises whatever is nested in it
+      child: Text(
+        'hello ninjas',
+        style: TextStyle(
+        fontSize: 20.0,
+        fontWeight: FontWeight.bold,
+        letterSpacing: 2.0,
+        color: Colors.grey[600],
+
+        ),
+
+),       //will allow us to style the text using textstyle Icons.widgets
+
+    ),
+    floatingActionButton: FloatingActionButton(
+      onPressed:() {} ,   //{}-this means that it is annnonmous functionality
+      child: Text('click'),
+      backgroundColor: Colors.red,
+    ),
+  ),
+
+));
